@@ -1,0 +1,30 @@
+{
+    "name": "mfw/composer",
+    "authors": [
+        {
+            "name": "hanwei",
+            "email": "hanwei@mafengwo.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "App\\" : "src/"
+        },
+        "classmap":[
+            "classmap/"
+        ],
+        "files":[
+            "files/helpers.php"
+        ]
+    },
+    "config":{
+        "classmap-authoritative":true
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
